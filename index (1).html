@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="styal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sediqa</title>
+</head>
+<body><div class="screen">
+    <video id="انگیزشی" controls>
+        <source src="414e7914d205035a0ccc3007eaef7fb543365335-480p.mp4">
+    </video>
+</div>
+
+<div class="controls">
+    <button onclick="playAgain()">🔁 Play Again</button>
+    <button onclick="rateMovie()">⭐️ Rate Movie</button>
+</div>
+</section>
+
+<script>
+function playAgain() {
+const video = document.getElementById('انگیزشی');
+video.currentTime = 0;
+video.play();
+}
+
+function rateMovie() {
+let rating = prompt("How many stars would you give this movie? (1-5)");
+if (rating) {
+    alert(`Aww, you gave ${rating} stars! Thanks! ✨`);
+}
+}
+</script>
+    
+</body>
+</html>
